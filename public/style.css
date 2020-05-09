@@ -1,0 +1,591 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+section#background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./images/luca-bravo-217276-unsplash.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+}
+
+.logo-bg {
+    position: absolute;
+    top: 45px;
+    left: 100px;
+}
+
+.logo-bg img {
+    height: 70px;
+}
+
+.say-hello {
+    position: absolute;
+    bottom: 250px;
+    left: 150px;
+    font-size: 42px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cover-typed {
+    color: #fff;
+    font-size: 23px;
+    position: absolute;
+    bottom: 150px;
+    left: 100px;
+}
+
+nav.navbar {
+    padding: 0;
+    box-shadow: 0px 6px 19px 1px lightslategray;
+    margin: 3px 0;
+}
+
+ul.navbar-nav {
+    width: 100%;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0;
+}
+
+a.nav-link {
+    padding: 20px 20px !important;
+}
+
+nav li {
+    height: 100%;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000 !important;
+}
+
+a.nav-link:hover {
+    color: #255429 !important;
+}
+
+.line {
+    height: 3px;
+    background: #333;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-item:hover .line {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+div#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+#about {
+    height: 100vh;
+    background: #ffffff;
+}
+
+#about, #experiences, #contact .text-center {
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-top: 1rem;
+    position: relative;
+}
+
+#experiences {
+    height: 100vh;
+    background: url(./images/experiences.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.75) inset;
+    color: #ffffff;
+}
+#experiences .line-css .vuong {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 50%;
+    top: 1.1em;
+}
+#experiences .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+#experiences .timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+#experiences .container-cover {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  font-size: 14px;
+}
+
+/* The circles on the timeline */
+#experiences .container-cover::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+#experiences .left {
+  left: -5px;
+}
+
+/* Place the container to the right */
+#experiences .right {
+  left: 50%;
+}
+
+#experiences .timeline{
+  margin-top: 7rem;
+}
+
+.timeline .company{
+  font-weight: 600;
+}
+
+/* Add arrows to the left container (pointing right) */
+#experiences .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+#experiences .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+#experiences .line-css .vuong:after {
+    width: 70px !important;
+    height: 1px !important;
+    content: "";
+    background: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 40px;
+    left: 6px;
+}
+
+#experiences .content .time-join{
+  font-style: italic;
+}
+
+#experiences .line-css .vuong:before {
+    width: 70px !important;
+    height: 1px !important;
+    content: "";
+    background: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -30px;
+    left: -65px;
+}
+
+/* Fix the circle for containers on the right side */
+#experiences .right::after {
+  left: -12px;
+}
+
+/* The actual content */
+#experiences .content {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  border: 2px solid;
+}
+
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  #experiences .timeline::after {
+  left: 31px;
+  }
+
+  /* Full-width containers */
+  #experiences .container-cover {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  #experiences .container-cover::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+#experiences   .left::after, .right::after {
+  left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+#experiences   .right {
+  left: 0%;
+  }
+}
+
+#contact {
+    height: 100vh;
+    background: url(./images/contact.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.75) inset;
+    color: #ffffff;
+}
+
+input.form-control {
+    background: transparent;
+}
+
+input::placeholder {
+    color: #fff !important;
+}
+input:focus{
+    background: transparent !important;
+    color: #fff !important;
+}
+
+textarea:focus{
+    background: transparent !important;
+    color: #fff !important;
+}
+
+textarea::placeholder {
+    color: #fff !important;
+}
+
+input {
+    border: 1px solid #ffffff !important;
+    color: #fff !important;
+}
+
+textarea {
+    border: 1px solid #ffffff !important;
+    color: #fff !important;
+}
+
+textarea.form-control {
+    background: transparent;
+}
+
+.line-css {
+    position: relative;
+}
+
+.line-css .vuong {
+    width: 12px;
+    height: 12px;
+    background: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 50%;
+    top: 0.8em;
+}
+
+.line-css .vuong:before {
+    width: 70px !important;
+    height: 1px !important;
+    content: "";
+    background: #000;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -30px;
+    left: -65px;
+}
+
+.line-css .vuong:after {
+    width: 70px !important;
+    height: 1px !important;
+    content: "";
+    background: #000;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 40px;
+    left: 6px;
+}
+
+#contact .line-css .vuong {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 50%;
+    top: 1.1em;
+}
+
+#contact .line-css .vuong:before {
+    width: 70px !important;
+    height: 1px !important;
+    content: "";
+    background: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -30px;
+    left: -65px;
+}
+
+#contact .line-css .vuong:after {
+    width: 70px !important;
+    height: 1px !important;
+    content: "";
+    background: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 40px;
+    left: 6px;
+}
+
+.back-to-top {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background: #266d7c;
+    bottom: 80px;
+    right: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+
+.back-to-top span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    transition: all 0.7s ease-in-out;
+    font-size: 20px;
+}
+
+.back-to-top:hover {
+    background: #ffffff;
+    transition: all 0.7s ease-in-out;
+}
+
+.back-to-top:hover .back-arr {
+    color: #226666;
+    transition: all 0.7s ease-in-out;
+}
+
+footer {
+    height: 250px;
+    color: #ffffff;
+    background: #080808e6;
+}
+
+/* FOOTER */
+
+.logo-footer img {
+    height: 70px;
+    margin-top: 15px;
+}
+
+.source {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -20px);
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.social ul li a {
+    color: #ffffff;
+}
+
+.social ul li {
+    list-style: none;
+    padding: 20px 20px;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+.social ul li a:hover {
+    color: gray;
+}
+
+@media only screen and (max-width: 767px) {
+    #about{
+        height: auto !important;
+    }
+    #contact {
+        height: auto;
+    }
+    nav {
+        display: none !important;
+    }
+    .logo-bg {
+        top: 1em;
+        left: 1em;
+    }
+    .say-hello {
+        left: 2em;
+        font-size: 26px;
+    }
+    .cover-typed {
+        font-size: 20px;
+        left: 2em;
+        bottom: 170px;
+    }
+    .ab-logo {
+        /* margin-top: 2em; */
+        /* margin-left: 4.3em; */
+        text-align: center;
+    }
+    .ab-logo img {
+        width: 110px;
+    }
+    h4 {
+        text-align: center;
+        margin-top: 7px;
+    }
+    .content p {
+        font-size: 16px;
+        text-transform: none;
+        line-height: 33px;
+    }
+    .back-to-top {
+        bottom: 2em;
+        right: 1.5em;
+    }
+    form {
+        margin-top: 1em;
+    }
+    .source {
+        width: 65%;
+    }
+    .line-menu {
+        width: 100%;
+        height: 2px;
+        background: #fff;
+    }
+
+}
+
+#about .row {
+    margin-top: 4em;
+    font-size: 19px;
+}
+
+#contact .row {
+    margin-top: 4em;
+}
+
+#contact ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+#contact ul li i {
+    padding-right: 7px;
+}
+
+#contact .cover {
+    padding-left: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .ab-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #about .description h4{
+        font-size: 26px !important;
+        color: #000;
+        font-weight: 600;
+    }
+    #about .content p{
+        font-size: 16px;
+        text-transform: none;
+    }
+}
